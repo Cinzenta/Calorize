@@ -110,6 +110,9 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="iOlNJ4PKD2sdGlTA0boe-92" value="Aplicativo Calorize" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="120" width="600" height="950" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
