@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15" version="26.2.14">
   <diagram name="Página-1" id="x-2YHEiGtUuAu708nRld">
-    <mxGraphModel dx="1892" dy="1076" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" math="0" shadow="0">
+    <mxGraphModel dx="1172" dy="927" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -27,12 +27,6 @@
         </mxCell>
         <mxCell id="iOlNJ4PKD2sdGlTA0boe-8" value="USC007&lt;div&gt;Alimentos frequentes&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="520" y="90" width="80" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="iOlNJ4PKD2sdGlTA0boe-9" value="USC001&lt;div&gt;Login&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="890" y="260" width="120" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="iOlNJ4PKD2sdGlTA0boe-10" value="USC001&lt;div&gt;Login&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="880" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="iOlNJ4PKD2sdGlTA0boe-12" value="USC008&lt;div&gt;Alimentos personali-&lt;/div&gt;&lt;div&gt;dados&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="520" y="170" width="80" height="60" as="geometry" />
