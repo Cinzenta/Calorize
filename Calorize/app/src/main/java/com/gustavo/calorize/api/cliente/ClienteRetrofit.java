@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ClienteRetrofit {
 
-    // A BASE_URL deve ser a raiz do seu servidor
+    // A BASE_URL deve ser a raizz do seu servidor
     private static final String BASE_URL = "http://10.0.2.2:8080/";
 
     private static Retrofit retrofit = null;
