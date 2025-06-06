@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+    </group>
+
+    <item android:title="Ações do Usuário">
+        <menu>
+            <item
+                android:id="@+id/nav_edit_macros"
+                android:icon="@drawable/ic_edit"
+                android:title="Editar Metas de Macros" />
+            <item
+                android:id="@+id/nav_delete_user"
+                android:icon="@drawable/ic_delete"
+                android:title="Excluir Usuário Atual" />
+        </menu>
+    </item>
+
+</menu>
