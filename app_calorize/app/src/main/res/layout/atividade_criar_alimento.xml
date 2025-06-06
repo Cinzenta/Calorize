@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".AtividadeCriarAlimento"> <ImageButton
+    android:id="@+id/backArrow"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:background="@null"
+    app:srcCompat="@drawable/ic_arrow_back"
+    android:contentDescription="Voltar"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginTop="16dp"
+    android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/edit_digitar_nome"
+        style="@style/EditTextPrincipal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Digitar o nome"
+        android:inputType="textCapSentences"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backArrow"
+        android:layout_marginTop="32dp" />
+
+    <EditText
+        android:id="@+id/edit_gramas_base"
+        style="@style/EditTextNutriente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Gramas (porção base, ex: 100)"
+        android:inputType="numberDecimal"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_digitar_nome"
+        android:layout_marginTop="24dp"/>
+
+    <EditText
+        android:id="@+id/edit_calorias"
+        style="@style/EditTextNutriente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Calorias (por porção base)"
+        android:inputType="numberDecimal"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_gramas_base"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/edit_proteina"
+        style="@style/EditTextNutriente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Proteína (por porção base)"
+        android:inputType="numberDecimal"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_calorias"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/edit_carboidrato"
+        style="@style/EditTextNutriente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Carboidrato (por porção base)"
+        android:inputType="numberDecimal"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_proteina"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/edit_gordura"
+        style="@style/EditTextNutriente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Gordura (por porção base)"
+        android:inputType="numberDecimal"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_carboidrato"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btn_salvar_alimento"
+        style="@style/ButtonSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_gordura"
+        android:layout_marginTop="48dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

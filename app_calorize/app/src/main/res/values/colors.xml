@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="your_primary_color">#FF5722</color>
+    <color name="your_primary_dark_color">#E64A19</color>
+    <color name="your_accent_color">#FFC107</color>
+    <color name="your_accent_dark_color">#FFA000</color>
+
+    <color name="cor_azul_botao_grid">#1E88E5</color>
+    <color name="texto_branco">#FFFFFF</color>
+    <color name="orange_border_color">#FF5722</color>
+    <color name="orange_text_color">#FF5722</color>
+    <color name="orange_button_color">#FF5722</color>
+    <color name="orange_macro_background">#FF5722</color>
+    <color name="blue_card_title">#00567C</color>
+    <color name="background_status_bar">#FFFFFF</color>
+    <color name="text_saudacao">#333333</color>
+
+</resources>

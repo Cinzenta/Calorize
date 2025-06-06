@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="8dp"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textTituloRefeicao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Título"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <ImageButton
+                android:id="@+id/btnAdicionar"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@null"
+                android:src="@drawable/ic_add"
+                android:contentDescription="Adicionar alimento"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@id/textTituloRefeicao"/>
+
+            <LinearLayout
+                android:id="@+id/layoutMacros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/textTituloRefeicao"
+                android:layout_marginTop="12dp"
+                android:weightSum="4">
+                <TextView
+                    android:id="@+id/textKcal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0 kcal"
+                    android:textColor="#444"/>
+
+                <TextView
+                    android:id="@+id/textProteina"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="P: 0g"
+                    android:textColor="#444"/>
+
+                <TextView
+                    android:id="@+id/textGordura"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="G: 0g"
+                    android:textColor="#444"/>
+
+                <TextView
+                    android:id="@+id/textCarbo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="C: 0g"
+                    android:textColor="#444"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</merge>

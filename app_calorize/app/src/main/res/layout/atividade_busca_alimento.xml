@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AtividadeBuscaAlimento">
+
+    <ImageButton
+    android:id="@+id/backArrow"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:background="@null"
+    app:srcCompat="@drawable/ic_arrow_back"
+    android:contentDescription="Voltar"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginTop="16dp"
+    android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/edit_buscar"
+        style="@style/Edit_Text"
+        android:hint="Buscar"
+        android:drawableEnd="@drawable/ic_buscar"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backArrow"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/alimentos_frequentes_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alimentos"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/edit_buscar"
+        app:layout_constraintStart_toStartOf="@+id/edit_buscar"
+        android:layout_marginTop="24dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_frequentes"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/edit_buscar"
+        app:layout_constraintEnd_toEndOf="@+id/edit_buscar"
+        app:layout_constraintTop_toBottomOf="@+id/alimentos_frequentes_titulo"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="3"
+        tools:listitem="@layout/item_alimento_botao"
+        android:nestedScrollingEnabled="false"/>
+
+    <TextView
+        android:id="@+id/alimentos_personalizados_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personalizados"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_frequentes"
+        app:layout_constraintStart_toStartOf="@+id/edit_buscar"
+        android:layout_marginTop="24dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_personalizados"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/edit_buscar"
+        app:layout_constraintEnd_toEndOf="@+id/edit_buscar"
+        app:layout_constraintTop_toBottomOf="@+id/alimentos_personalizados_titulo"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="3"
+        tools:listitem="@layout/item_alimento_botao"
+        android:nestedScrollingEnabled="false"/>
+
+    <Button
+        android:id="@+id/btn_refeicao_personalizada"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refeição personalizada"
+        android:drawableStart="@drawable/ic_refeicao_personalizada"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="32dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
